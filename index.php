@@ -1,6 +1,6 @@
 <?php
 
-$faqs = [
+$faq = [
     'requests' => [
         [
             'domanda' => "Come state implementando la recente decisione della Corte di giustizia dell'Unione europea (CGUE) relativa al diritto all'oblio?",
@@ -43,8 +43,12 @@ $faqs = [
     ],
 ];
 
-foreach ($faqs as $key => $faq) {
-    echo $key;
+foreach ($faq as $requests => $request) {
+    echo $requests;
+    foreach ($request as $content) {
+        echo $content['domanda'];
+        echo $content['risposta'];
+    }
 }
 
 
