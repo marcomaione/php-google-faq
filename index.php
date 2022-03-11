@@ -1,3 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>faq Google</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="up">
+            <img src="https://loghi-famosi.com/wp-content/uploads/2020/09/Google-Logo.png" alt="logo google">
+            <span>Privacy e Termini</span>
+        </div>
+    </header>
+    
+</body>
+</html>
 <?php
 
 $faq = [
@@ -44,7 +64,7 @@ $faq = [
 ];
 
 foreach ($faq as $requests => $request) {
-    echo $requests;
+    
     foreach ($request as $content) {
         echo $content['domanda'];
         echo $content['risposta'];
