@@ -24,9 +24,17 @@
             </nav>
         </div>
     </header>
+    <main>
+        <div class="container">
+        <h1><?php echo $content['domanda'];?></h1>
+        </div>
+    </main>
     
 </body>
 </html>
+
+<!--php-->
+
 <?php
 
 $faq = [
