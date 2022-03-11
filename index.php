@@ -86,13 +86,13 @@ foreach ($faq as $requests => $request) {
     </header>
     <main>
         <div class="container">
-            <div>
+            <div class="content">
               <?php
                  foreach ($faq as $requests => $request) {
     
                     foreach ($request as $content) {
                         echo '<h1 class="domanda">'. $content['domanda'] . '</h1>';
-                        echo "<p>". $content['risposta'] . "</p>";
+                        echo '<p class="risposta">'. $content['risposta'] . '</p>';
                         
                     }
                 } 
@@ -101,6 +101,21 @@ foreach ($faq as $requests => $request) {
             </div>
         </div>
     </main>
+    <footer>
+        <div class="center">
+            <div>
+                <ul>
+                    <li><a href="#">Google</a></li>
+                    <li><a href="#">Tutto su Google</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Termini</a></li>
+                </ul>
+            </div>
+            <div>
+                <input type="text" placeholder="Italiano">
+            </div>
+        </div>
+    </footer>
     
 </body>
 </html>

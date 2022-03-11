@@ -9,8 +9,13 @@
 /* regole header*/
 
 .up {
+    width: 100%;
+    background-color: white;
     border-bottom: solid 1px gray;
     min-height: 90px;
+    position: fixed;
+    margin-top: 0;
+    z-index: 999;
 }
 .up img {
     max-width: 100px;
@@ -47,6 +52,44 @@
     justify-content: center;
 }
 
+.content {
+    width: 80%;
+    margin-top: 100px;
+}
+
 .domanda {
     margin: 40px 0px;
+}
+
+.risposta {
+    color: rgb(56, 54, 54);
+    margin: 5px 0px;
+}
+
+/* regole footer*/
+
+footer {
+    margin-top: 30px;
+    width: 100%;
+    min-height: 80px;
+    background-color: #d6d5d5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center {
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.center li {
+    display: inline-block;
+}
+.center a {
+    text-decoration: none;
+    color: gray;
+    margin: 0px 5px;
 }
