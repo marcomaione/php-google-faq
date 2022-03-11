@@ -13,6 +13,15 @@
         <div class="up">
             <img src="https://loghi-famosi.com/wp-content/uploads/2020/09/Google-Logo.png" alt="logo google">
             <span>Privacy e Termini</span>
+            <nav class="bar">
+                <ul>
+                    <li><a href="#">Introduzione</a></li>
+                    <li><a href="#">Norme sulla Privacy</a></li>
+                    <li><a href="#">Termini di servizio</a></li>
+                    <li><a href="#">Tecnologie</a></li>
+                    <li><a href="#">Domande frequenti</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     
