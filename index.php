@@ -1,38 +1,3 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>faq Google</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-    <header>
-        <div class="up">
-            <img src="https://loghi-famosi.com/wp-content/uploads/2020/09/Google-Logo.png" alt="logo google">
-            <span>Privacy e Termini</span>
-            <nav class="bar">
-                <ul>
-                    <li><a href="#">Introduzione</a></li>
-                    <li><a href="#">Norme sulla Privacy</a></li>
-                    <li><a href="#">Termini di servizio</a></li>
-                    <li><a href="#">Tecnologie</a></li>
-                    <li><a href="#">Domande frequenti</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <div class="container">
-        <h1><?php echo $content['domanda'];?></h1>
-        </div>
-    </main>
-    
-</body>
-</html>
-
 <!--php-->
 
 <?php
@@ -79,14 +44,63 @@ $faq = [
 
     ],
 ];
-
+/*
 foreach ($faq as $requests => $request) {
     
     foreach ($request as $content) {
         echo $content['domanda'];
         echo $content['risposta'];
+        
     }
 }
+*/
+
 
 
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>faq Google</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="up">
+            <img src="https://loghi-famosi.com/wp-content/uploads/2020/09/Google-Logo.png" alt="logo google">
+            <span>Privacy e Termini</span>
+            <nav class="bar">
+                <ul>
+                    <li><a href="#">Introduzione</a></li>
+                    <li><a href="#">Norme sulla Privacy</a></li>
+                    <li><a href="#">Termini di servizio</a></li>
+                    <li><a href="#">Tecnologie</a></li>
+                    <li><a href="#">Domande frequenti</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class=>
+              <?php
+                 foreach ($faq as $requests => $request) {
+    
+                    foreach ($request as $content) {
+                        echo "<h1>". $content['domanda'] . "</h1>";
+                        echo "<p>". $content['risposta'] . "</p>";
+                        
+                    }
+                } 
+              ?>
+        
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>
