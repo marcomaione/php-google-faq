@@ -86,12 +86,12 @@ foreach ($faq as $requests => $request) {
     </header>
     <main>
         <div class="container">
-            <div class=>
+            <div>
               <?php
                  foreach ($faq as $requests => $request) {
     
                     foreach ($request as $content) {
-                        echo "<h1>". $content['domanda'] . "</h1>";
+                        echo '<h1 class="domanda">'. $content['domanda'] . '</h1>';
                         echo "<p>". $content['risposta'] . "</p>";
                         
                     }
